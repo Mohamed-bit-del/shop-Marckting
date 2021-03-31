@@ -1,0 +1,353 @@
+body {
+  background: var(--light-background);
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- Start Header Shop =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+.header-top { 
+  background: var( --dark-hover);
+}
+
+.header-top__shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-top__text {
+  margin: 0;
+  padding-inline-end: 25px;
+}
+
+.header-top__time-deals { /* header timming */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-heading {
+  margin-block: 0;
+  padding-inline: 20px;
+}
+
+.timming {
+  margin-inline: 5px;
+  padding: 3px 13px;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.header-top-btn {margin-inline-start: 30px;} /* header button */
+
+.header-top__btn-click {
+  padding: 3px 13px;
+  outline: 0;
+  border: 2px solid #d52f40;
+  border-radius: 5px;
+}
+
+.left-rigth-line::before{ /* left and right line */
+  content: '';
+  width: 1px;
+  height: 25px;
+  background: #9999;
+  position: absolute;
+  top: 12px;
+}
+
+.left-rigth-line:after {
+  content: '';
+  width: 1px;
+  height: 25px;
+  background: #9999;
+  position: absolute;
+  top: 12px;
+  margin-inline-start: 405px;
+}
+
+.ekommart-line:before{ /* header Middle */
+  content: '';
+  width: 1px;
+  height: 135px;
+  background: #9999;
+  position: absolute;
+  top: 52px;
+}
+
+#header-middle__search--search {border: 1px solid #9999;}
+
+.header-middle__contact {display: flex;}
+
+.cotact__shopping {padding-inline-start: 50px;}
+
+.header-middle__contact-line:before {
+  content: '';
+  width: 1px;
+  height: 45px;
+  background: #9999;
+  position: absolute;
+  top: 70px;
+  margin-inline-start:20px ;
+}
+
+.call-number, .shopping-text-one {
+  margin-block-end: 5px;
+}
+
+.shpping-text-two, .call-text  {
+  margin-block: 0;
+}
+
+.header-bottom__responsive { /* header bottom */
+  justify-content: center;
+  margin-block: 2.8px;
+}
+
+.header-bottom__item {padding-inline: 42px;}
+
+.header-nagtive { /* header nagtive */
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 50px;
+  margin-block-end: 30px;
+}
+
+.header-nagtive-par {
+  display: flex;
+  align-items: center;
+  padding-inline-start: 0;
+}
+
+.gr-than {padding-inline: 10px;}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- End Header Shop -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- Strat Section Proudact -=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+.two-coloum-proudact { /* proudact ul */
+  display: flex;
+  width: 100%;
+}
+
+.product-categories {
+  width: 350px;
+}
+
+.product-categories__collection {
+  padding-inline-start: 0;
+  line-height: 27px;
+  margin-block: 0;
+}
+
+.product-categories__collection-heading {
+  width: 300px;
+  margin-block: 30px;
+  padding-block: 30px;
+  border-bottom: 1px solid #9999;
+}
+
+.proudact-shop__header { /* proudact card */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 12px;
+  padding-block: 30px;
+  border-bottom: 1px solid #9999;
+}
+
+.title__text {
+  margin-block: 0;
+}
+
+.proudact-shop { /* Cards */
+  width: calc(100% - 350px);
+}
+
+.header__list-icon {
+  display: flex;
+  align-items: center;
+}
+
+.ching-cards__icon {
+  font-size: 15px;
+  padding-inline-end: 15px;
+}
+
+.filter__text,
+.list-icon__filter,
+.collection__colsing {display: none;}
+
+#select-prodact {
+  padding: 10px 40px;
+  text-transform: capitalize;
+  outline: none;
+  border: 2px solid #1111;
+  border-radius: 2px;
+}
+
+.proudact-shop__cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-block: 50px;
+}
+
+.proudact-shop__card {
+  width: 33.33333%;
+}
+
+.group-products__card {
+  width: auto;
+}
+
+.card-info__chang {
+  display: none;
+}
+
+.Pagination { /* Pagination */
+  margin-block: 50px;
+}
+
+.Pagination__lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 0;
+}
+
+.lists__item {
+  padding: 10px 20px;
+  margin-inline: 5px;
+  transition: 1s all;
+}
+
+.lists__item:hover {
+  cursor: pointer;
+  background-color: var(--tomato-color)
+} 
+
+/*=-=-=-=-=-=-=- start chang onclick vertical-card prodact -=-=-=-=-=-=-=-*/
+.list-view .proudact-shop__cards {flex-direction: column;}
+
+.list-view .group-products__card-info {
+  align-items: flex-start;
+  justify-content: stretch;
+  padding-block-start: 50px;
+}
+
+.list-view .proudact-shop__card {width: 100%} 
+
+.list-view .group-products__card {
+  flex-direction: row;
+  border: none;
+  padding-block-end: 0;
+  border-bottom: 1px solid #EEE;
+}
+
+.list-view .logo-card img {width: 300px;}
+
+.list-view .cart-title {
+  text-align:left;
+  width: auto;
+  color: var(--light-dark-text);
+}
+
+.list-view .card-info__chang,.list-view .card-info__chang {text-align: left;} 
+.list-view .card-info__chang {display: block;}
+
+
+.list-view .card-btn {padding: 18px 25px;}
+
+.list-view .hover-card__icon { 
+    flex-direction: column;
+    width: 45px;
+    left: 67px;
+}
+
+.list-view .group-products__card:hover .hover-card { animation-name: fadeInrigth;} 
+@keyframes fadeInrigth {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+ 
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- End Section Proudact -=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- Start section contact =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+.contact-us__pages {padding-block: 100px;}
+
+.collection-find {line-height: 35px;}
+
+.space-item-bottom {
+  position: relative;
+  top: 30px;
+}
+
+.span-control {
+  width: 80%;
+  padding-block-end: 20px;
+}
+
+.mailte-number { /* contact us */
+  display: inline;
+  margin-inline-start: 20px;
+  position: relative;
+  bottom: 15px;
+}
+
+.timming-item { /* store location */
+  margin-block: 5px;
+}
+
+.collection-find__item .header-middle__search { /* input email */
+  width: 350px;
+  bottom:0
+}
+
+.collection-find__item .header-middle__search--icon {
+  top:43px
+}
+
+.collection-find__item #header-middle__search--search {
+  width: 235px;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+.emaile-btn {
+  top: 41px;
+  padding-inline: 20px;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- End section contact =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- Strat Footer =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+.footer {
+  padding-block: 50px;
+  margin-block-start: 1px;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- End Footer =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+/* .list-view .proudact-shop__card {
+  width: 100%;
+}
+
+.list-view .group-products__card-image {
+width: 40%;
+}
+
+.list-view .group-products__card-info.capitlize-text {
+width: 60%;
+}
+
+.list-view .group-products__card {
+display: flex;
+flex-direction: row;
+} */

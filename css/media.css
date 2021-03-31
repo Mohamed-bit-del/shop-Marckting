@@ -1,11 +1,99 @@
-@media (max-width: 320px) 
+@media (max-width: 425px) 
 {
+  html div.container.anther {max-width: 250px !important;} 
+
+  .fs25{font-size: 20px;}
+
+  .fs40 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  span.header-middle__sochil--doler {display: none;} /* Header Start */
+
+  .header-middel__logo {padding-inline: 10px;}
+
+  #open-btn {
+    position: relative;
+    right: 15px;
+  }
+
+  .first-loge__text { /* Start section Main */
+    top: 0;
+    width: 75% !important;
+  } 
+
+  .section-one-second__paragraphe {width: 100px;}
+
+  .section-one-first__heading {
+    width: auto;
+    font-size: 20px;
+  }
+
+  .title__text.light {margin-block-start: 0;}
+
+  /* .section-one__first-loge, .section-one__second-loge {height: 250px !important;} */
+
+  .section-two__loge-three,
+  .section-two__loge-four,
+  .section-two__loge-five {
+    height: 150px !important;
+  }
+
+  .section-two-first__text {
+    bottom: 10px !important;
+    font-size: 12px !important; 
+    line-height: 20px !important;
+  }
+
+  .time-deals__number {flex-direction: column;} /* Start Section Time dealy */
+
+  .free-delivrey__icon.primary-color {padding-inline: 0;}
+  
+  .grouping-images__group-image:nth-child(2) {
+    margin-inline: 0px;
+  }
+
+  .abut-page__collection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .abut-page__item {padding-block: 5px;}
+
+  .grouping-camera__laptops-three {
+    background-size: cover;
+    background-position: 0;
+  }
+
+  .laptops_logo-one,
+  .laptops_logo-two,
+  .laptops_logo-three {height: 150px;}
+
+  .laptops-title {
+    margin: 0;
+    padding-inline: 25px;
+    padding-block: 20px;
+    line-height: 15px;
+    text-align: center;
+  }
 
 }
 
+@media  (min-width: 450px) and (max-width: 768px) {
+  .card-item { 
+    padding-block: 20px;
+  }
+
+  .hover-card__icon {
+      width: 40%;
+  } 
+}
+
+
 @media (max-width: 768px)
 {
-  div.container.anther {max-width: 600px !important;}
+  div.container.anther {max-width: 500px !important;}
 
   section.main {flex-direction: column;}
 
@@ -15,26 +103,41 @@
     margin-block-end: 30px;
   }
 
+  .controle-a {padding-inline: 0;}
+
   div.mian__groub-images {width: 100% !important;}
 
   .groub-images__section-one {flex-direction: column;}
 
   .groub-images__section-two {
     flex-direction: column;
-    line-height: 60px;
   }
 
-  .section-one__first-loge { /* Start Section Logo */
-  /* width: 100%; */
-  background-size: cover;
-  background-position: initial;
+  .controle-a {
+    flex-direction: column;
+    padding-block: 20px;
   }
 
-  .section-one__second-loge {
-  /* width: 100%; */
-  background-size: cover;
-  background-position: inherit;
+  .item-text {
+    padding-block-start: 15px;
+    padding-inline-start: 0;
+}
+
+  .section-one__first-loge , /* Start Section Logo */
+  .section-one__second-loge{
+  width: 100%;
+  height: 400px;
+  background-size: 100% 150%;
   }
+
+  .second-loge__text {top: 400px;}
+
+  .section-two-first__text {
+    width: 30% !important;
+    bottom: 100px;
+    font-size: 20px;
+    line-height: 30px;
+}
 
   .technical-support { /* Start Technical Support*/
     flex-direction: column;
@@ -46,6 +149,8 @@
       padding-block-end: 25px;
   }
 
+  .free-delivrey__icon {padding-inline-end: 0;}
+
   .free-delivrey__text {text-align: center;}
 
   section.time-deals {flex-direction: column;} /* Start Section Time Dealy */
@@ -54,34 +159,27 @@
 
   .group-products__card {width: 100%;}
 
-  .logo-card {
-    width: 500px;
-    margin: auto;
-  }
-
-  /* .logo-card img {width: 250px;} */
-
   section.grouping-images { /* Start Section image */
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .grouping-images__group-image {
-      width: 500px;
-      margin-block: 15px;
+  .grouping-images__group-image:nth-child(2) {
+    margin-block: 15px;
   }
+
+  .grouping-images__group-image {
+      width: 100%;
+  }
+
+  .group-image__title {bottom: 70px;}
 
   .grouping-camera__cards {flex-direction: column;}/* Start Croub Cards */
 
-  .card-images__logo {
-    margin: auto;
-    width: 300px;
-  }
-
   .title-barnd {text-align: center;} /* Start Section Brandes */
 
-  .brang__logo.light-background {width: 50%;}
+  .brang__logo.light-background {width: 80%;}
 
   .contact-us__pages { /* Start Sction Counact us */
     flex-direction: column;
@@ -96,9 +194,10 @@
 
   .contact-us__send-info,.line-footer {display: none;}
 
-  .ligh-dark-color { /* Start Footer */
+  .footer { /* Start Footer */
+    line-height: 25px;
+    padding-inline: 0;
     flex-direction: column;
-    padding-block: 30px;
   }
 
 }
@@ -194,13 +293,42 @@
     top: 30px;
     left: 270px;
     display: block;
-    font-size: 30px;
+    font-size: 25px;
     z-index: 99999;
   }
 
+  .header__ul {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  .ul__collection-fixed {
+    display: flex;
+    justify-content: space-around;
+    padding-inline-start: 0;
+    margin-block: 10px;
+  }
+  
+  .item__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .link__icon{font-size: 25px;}
+
+
   /* Strat Main Section */
 
-  .section-one-second__heading {width: 100%;}
+  .first-loge__text {width: 36%;}
+
+  .section-one-second__heading {width: 150px;}
+
+  .section-two-first__text {width: 15%;}
 
   .mian__groub-images {width: 65% !important;}
 
@@ -219,34 +347,70 @@
       padding-inline-start: 20px;
   }
 
+  div.group-image__title {width: 75%;} /* Groube image */
+
+  /* Start Footer */
+  .footer {
+    padding-block-end: 100px;
+    padding-block-start: 30px;
+  }
+
 }
 
 @media (max-width: 1200px)
 {
   .container {max-width: 1100px !important;}
 
-  .hover-listes {width: 150px;}
+  .group-image__title {width: 40%;} /* Groub image */
 
-  .collection__list-shop-items {width: 50%;}
+  /* .hover-listes {width: 150px;} */
 
-  .mian__groub-images {width: auto;}
+  /* .collection__list-shop-items {width: 50%;} */
 
-  .logo-one, .logo-two, .logo-three {height: 50%;}
+  /* .mian__groub-images {width: auto;} */
 
-  .hover-card__icon {bottom: 125px;}
+  /* .logo-one, .logo-two, .logo-three {height: 50%;} */
+
+  /* .hover-card__icon {bottom: 125px;} */
 
   /* .grouping-camera__laptops-three {height: 250px;}   */
 
-  .brang__logo {
+  /* .brang__logo {
     width: 18%;
     padding-inline: 10px;
-}
+} */
 
   /* .list-item {line-height: 0;} */
 
 }
 
-@media (max-width: 1400px) 
+@media (max-width: 1440px) 
 {
-  .container {max-width: 1200px;}
+  .container {max-width: 1300px;}
+
+  .brang__logo{width: 18%;}
+
+  /* .section-one__first-loge:hover ,
+  .section-one__second-loge:hover {
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+  }
+  .section-two__loge-three:hover,
+  .section-two__loge-four:hover,
+  .section-two__loge-five:hover {
+    background-size: 110% 110%;
+    background-position: 100% 100%;
+  }
+
+  .logo-one:hover, .logo-two:hover, .logo-three:hover{
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+  }
+
+  .grouping-camera__laptops-one:hover,
+   .grouping-camera__laptops-two:hover,
+   .grouping-camera__laptops-three:hover {
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+  } */
 }

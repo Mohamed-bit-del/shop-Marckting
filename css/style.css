@@ -5,7 +5,8 @@
   --light-sliver-body: #f8f8f8;
   --light-blue-header: #0069df;
   --dark-blue-header: #0163d2;
-  --tomato-hover: #d52f40;
+  --tomato-color: #ef3636;
+  --tomato-hover:#D93131;
   --primary-background-text: #fcb600;
   --primary-hover: #E5A500;
   --dark-hover: #000;
@@ -66,13 +67,14 @@ header {
 
 .header-middle__search--icon {
   position: relative;
-  top: 38px;
+  top: 35px;
   left: 15px;
 }
 
 .header-middle__sochil--round {
   position: absolute;
   top: 65px;
+  margin-inline-start: -5px;
   border-radius: 100%;
   padding-block: 1px;
   padding-inline: 3px;
@@ -83,17 +85,17 @@ header {
 }
 
 .header-middle__search {
+  width: 600px;
   bottom: 10px;
   position: relative;
 }
 
 #header-middle__search--search {
   border: 0;
-  width: 100%;
-  margin: auto;
+  width: 600px;
   border-radius: 2px;
-  padding: 20px 350px 20px 50px;
-  outline-color: var(--primary-background-text);
+  padding: 15px 50px;
+  outline: none;
 }
 
 .header-middle__search--btn {
@@ -104,7 +106,7 @@ header {
   padding: 10px 30px;
   position: absolute;
   right: 20px;
-  top: 27px;
+  top: 23px;
 }
 
 .header-middel__logo {
@@ -116,12 +118,14 @@ header {
 }
 
 .header-middle__sochil > div {
+  font-size: 20px;
   padding-inline-start: 15px;
 }
 
 .header-bottom__responsive {
   display: flex;
   justify-content: space-between;
+  padding-block-start: 10px;
 }
 
 .header-bottom__contacet-us {
@@ -211,8 +215,7 @@ header {
   flex-wrap: wrap;
   position: absolute;
   top: 202px;
-  /* left: 400px; */
-  height: 100%;
+  height: 494px;
   line-height: 25px;
   width: calc(100% /3);
   visibility: hidden;
@@ -249,7 +252,7 @@ header {
 /* blog */
 .collection__list-blog-items {
   position: absolute;
-  top: 210px;
+  top: 202px;
   /* left: 480px; */
   height: 180px;
   z-index: 999;
@@ -262,6 +265,10 @@ header {
 .visbile-list-blog:hover .collection__list-blog-items {
   visibility: visible;
 }
+
+.header__ul {display: none;}
+
+/*===================== End Header ======================*/
 
 /*===================== Start main section ======================*/
 .main {
@@ -282,6 +289,11 @@ header {
 
 .collection-nav__item { /* ul item */
   border-bottom: .1px solid #DDD;
+}
+
+.controle-a {
+  display: flex;
+  align-items: center;
   padding-block: 15px;
   padding-inline-start: 30px;
 }
@@ -312,17 +324,20 @@ header {
   height: 100%;
   display: flex;
   line-height: 0;
+  /* overflow: hidden; */
 }
 
 .first-loge__text {
+  margin: auto;
+  width: 21%;
   position: absolute;
   top: 30px;
   line-height: 25px;
-  padding-inline-start: 40px;
+  margin-inline-start: 40px;
 }
 
 .section-one-first__heading {
-  width: 51%;
+  line-height: 1.5;
 }
 
 .section-one-first__btn {
@@ -333,101 +348,133 @@ header {
   border-radius: 4px;
 }
 
-.second-loge__text { 
+.second-loge__text {
+  margin:auto;
+  width: 19%;
   position: absolute;
   top: 30px;
   line-height: 25px;
-  padding-inline-start: 40px;
+  margin-inline-start: 40px;
 }
 
 .section-one-second__heading {
-  width: 55%;
+  line-height: 1.5;
 }
 
-.section-one__first-loge { /* image animation */
-  background-image: url(../image/Groub-1/groub-1-image\(1\).jpg);
+.section-one__first-loge {
+  overflow: hidden;
   width: 80%;
+  height: 100%;
+}
+
+.logo__image-one { /* image animation */
+  background-image: url(../image/Groub-1/groub-1-image\(1\.jpg);
+  width: 100%;
+  height: 442px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: 100% 100%;
+  transition:transform 1.5s;
 }
 
-.section-one__first-loge:hover {
-  background-size: 110% 110%;
-  background-position: 70% 70%;
-  transition: .6s ease-in-out all;
-  /* animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+.logo__image-one:hover {
+  transform: matrix(1.1, 0, 0, 1.1, -1.1268486, -1.561561);
 }
 
-.section-one__second-loge {
-  background-image: url(../image/Groub-1/groub-1-image\(2\).jpg);
+.section-one__second-loge{
+  overflow: hidden;
   width: 40%;
+  height: 100%;
+}
+
+.logo__image-two {
+  background-image: url(../image/Groub-1/groub-1-image\(2.jpg);
+  width: 100%;
+  height: 442px;
+  z-index: 1;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: 100% 100%;
+  transition:transform 1.5s;
 }
 
-.section-one__second-loge:hover {
-  background-size: 110% 110%;
-  background-position: 100% 100%;
-  transition: .6s ease-in-out all; all;
+.logo__image-two:hover {
+  transform: matrix(1.1, 0, 0, 1.1, -1.1268486, -1.561561);
 }
 
-.section-two__loge-three {
-  background-image: url(../image/Groub-1/groub-1-image\(3\).jpg);
-  width: 100%;
-  background-size: 110% 110%;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-}
-
-.section-two__loge-four {
-  background-image: url(../image/Groub-1/groub-1-image\(4\).jpg);
-  width: 100%;
-  background-size: 110% 110%;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-}
-
+.section-two__loge-three,
+.section-two__loge-four,
 .section-two__loge-five {
-  background-image: url(../image/Groub-1/groub-1-image\(5\).jpg);
   width: 100%;
-  background-size: 110% 110%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo__image-three {
+  background-image: url(../image/Groub-1/groub-1-image\(3\.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: 100% 100%;
+  transition:transform 1.5s;
 }
 
-.section-two__loge-three:hover,
-.section-two__loge-four:hover,
-.section-two__loge-five:hover {
-  background-size: 120% 120%;
-  background-position: 100% 100%;
-  transition: .6s ease-in-out all; all;
+.logo__image-three:hover {
+  transform: matrix(1.1, 0, 0, 1.1, -1.1268486, -1.561561);
 }
 
-@keyframes slide-fwd-center {
+.logo__image-four {
+  background-image: url(../image/Groub-1/groub-1-image\(4\.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transition:transform 1.5s;
+}
+
+.logo__image-four:hover {
+  transform: matrix(1.1, 0, 0, 1.1, -1.1268486, -1.561561);
+}
+
+.logo__image-five {
+  background-image: url(../image/Groub-1/groub-1-image\(5\.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transition:transform 1.5s;
+}
+
+.logo__image-five:hover {
+  transform: matrix(1.1, 0, 0, 1.1, -1.1268486, -1.561561);
+}
+
+
+/* @keyframes slide-fwd-center {
   0% {
     transform: translateZ(0);
   }
   100% {
     transform: translateZ(160px);
   }
-}
+} */
 
 
 .groub-images__section-two { /* section two */
   display: flex;
   width: 100%;
-  height: 40%;
+  height: 100%;
 }
 
 .section-two-first__text {
-  /* position: absolute; */
-  padding-inline-start: 20px;
+  margin: auto;
+  width: 11%;
+  position: absolute;
+  bottom: 24px;
+  margin-inline-start: 20px;
 }
 
 .section-two-first__heading {
-  /* width: 50%; */
+  line-height: 1.5;
 }
 
 /*====================== End main section ======================*/
@@ -469,6 +516,7 @@ header {
 
 .timming {
   text-align: center;
+  padding-block: 10px;
 }
 
 .time-deals__number {
@@ -578,60 +626,66 @@ header {
   margin-block: 30px;
 }
 
-/* .group-image__title {
-  position: absolute;
-  padding-block-start: 30px;
-  padding-inline-start: 50px;
-} */
-
 .title__heading {
-  /* width: 55%; */
   margin-block: 0;
 }
 
-/* .group-image__picture img {
-  width: 440px;
-} */
-
-.logo-one {
-  background-image: url(../image/Groub-3/groub-3-image\(1\).jpg);
-  background-size: 100% 100%;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  width: 50%;
-  padding-block: 50px;
-  margin-inline-start: 10px;
-  padding-inline-start: 40px;
+.group-image__title {
+  margin: auto;
+  width: 28%;
+  position: absolute;
+  bottom: 35px;
+  margin-inline-start: 20px;
 }
 
-.logo-two {
-  background-image: url(../image/Groub-3/groub-3-image\(2\).jpg);
-  background-size: 100% 100%;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  width: 50%;
-  padding-block: 50px;
-  margin-inline-start: 10px;
-  padding-inline-start: 40px;
+.grouping-images__group-image {
+  width: 33.3333%;
+  overflow: hidden;
+  height: 250px;
+  position: relative;
 }
 
-.logo-three {
-  background-image: url(../image/Groub-3/groub-3-image\(3\).jpg);
-  background-size: 100% 100%;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  width: 50%;
-  padding-block: 50px;
-  margin-inline-start: 10px;
-  padding-inline-start: 40px;
+.grouping-images__group-image:nth-child(2) {
+  margin-inline: 25px;
 }
 
-.logo-one:hover, 
-.logo-two:hover, 
-.logo-three:hover {
-  background-size: 110% 110%;
-  background-position: 100% 100%;
-  transition: .6s ease-in-out all; all;
+.group-image__logo-one {
+  background-image: url(../image/Groub-3/groub-3-image\(1\.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  transition:transform 1.5s;
+}
+
+.group-image__logo-one:hover {
+  transform: matrix(1.1, 0, 0, 1.1, -1.1268486, -1.561561);
+}
+
+.group-image__logo-two {
+  background-image: url(../image/Groub-3/groub-3-image\(2\.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  transition:transform 1.5s;
+}
+
+.group-image__logo-two:hover {
+  transform: matrix(1.1, 0, 0, 1.1, -1.1268486, -1.561561);
+}
+
+.group-image__logo-three {
+  background-image: url(../image/Groub-3/groub-3-image\(3\.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  transition:transform 1.5s;
+}
+ 
+.group-image__logo-three:hover {
+  transform: matrix(1.1, 0, 0, 1.1, -1.1268486, -1.561561);
 }
 
 /*========================== End Collection images ==========================*/
@@ -692,36 +746,52 @@ header {
   border-radius: 5px;
 }
 
-.grouping-camera__laptops-one {
+.grouping-camera__laptops-one,
+.grouping-camera__laptops-two,
+.grouping-camera__laptops-three {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.laptops_logo-one {
   background-image: url(../image/Groub-4/alctronik/laptop.jpg);
   width: 100%;
-  height: 100%;
+  height: 220px;
   background-size: 100% 100%;
-  background-position: 100% 100%;
+  /* background-position: 100% 100%; */
+  transition:transform 1.5s;
 }
 
-.grouping-camera__laptops-two {
+.laptops_logo-one:hover {
+  transform: matrix(1.1, 0, 0, 1.1, -1.1268486, -1.561561);
+}
+
+.laptops_logo-two {
   background-image: url(../image/Groub-4/fashion/shoes.jpg);
   width: 100%;
-  height: 100%;
+  height: 220px;
   background-size: 100% 100%;
-  background-position: 100% 100%;
+  /* background-position: 100% 100%; */
+  transition:transform 1.5s;
 }
 
-.grouping-camera__laptops-three {
+.laptops_logo-two:hover {
+  transform: matrix(1.1, 0, 0, 1.1, -1.1268486, -1.561561);
+}
+
+.laptops_logo-three {
   background-image: url(../image/Groub-4/home/5.jpg);
   width: 100%;
-  height: 100%;
+  height: 220px;
   background-size: 100% 100%;
-  background-position: 100% 100%;
+  /* background-position: 100% 100%; */
+  transition:transform 1.5s;
 }
 
-.grouping-camera__laptops-one:hover,
-.grouping-camera__laptops-two:hover,
-.grouping-camera__laptops-three:hover {
-  background-size: 110% 110%;
-  background-position: 110% 110%;
-  transition: .5s ease-in-out all;
+.laptops_logo-three:hover {
+  transform: matrix(1.1, 0, 0, 1.1, -1.1268486, -1.561561);
 }
 
 .laptops-title {
@@ -731,7 +801,10 @@ header {
   justify-content: center;
   line-height: 27px;
   padding-block: 30px;
-  padding-inline-end: 50%;
+  margin-inline-start: 100px;
+  position: absolute;
+  bottom: 0;
+
 }
 
 .laptops-title__text {margin-block: 0;}
@@ -768,19 +841,11 @@ header {
   top: 52px;
 }
 
-/* .electronic__mobiles-list {
-  margin-block-start: 40px;
-} */
-
 .list-item {
   display: flex;
   height: 125px;
   line-height: 141px;
 }
-
-/* .item-change {
-  line-height: 90px;
-} */
 
 .item-title__text {
   width: 50%;
@@ -793,10 +858,6 @@ header {
   padding-inline-start: 20px;
 }
 
-/* .item-pic {
-  padding-inline: 25px;
-} */
-
 .chang-span {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -806,7 +867,6 @@ header {
 
 .list-item img {
   max-width: 100px;
-  /* width: 100%; */
 }
 
 .camera-card:hover .hover-card  {
@@ -819,9 +879,10 @@ header {
 /*======================= Start Section Home Garden Kitchen ========================*/
 .revase-title {
   padding-inline: 0;
+  padding-block: 0;
   line-height: 30px;
-  margin-block: 20px;
-  margin-inline-start: 45%;
+  margin-block: 43px;
+  margin-inline-start: 50%;
 }
 /*======================= End Section Home Garden Kitchen ========================*/
 
@@ -860,6 +921,7 @@ header {
   width: 100%;
   line-height: 25px;
   position: relative;
+  padding-inline-start: 0;
 }
 
 .span-control {
@@ -877,17 +939,7 @@ header {
 
 .li-control__text-item {
   position: absolute;
-  width: 50%;
-}
-
-.line-footer:after {
-  content: '';
-  width: .1px;
-  height: 276px;
-  background: #9999;
-  position: absolute;
-  right: 500px;
-  left: 0;
+  /* width: 50%; */
 }
 
 .send-email {
@@ -957,6 +1009,7 @@ header {
   align-items: center;
   justify-content: space-between;
   margin-block-start: 30px;
+  padding-block: 20px;
 }
 
 .collection-sochil {
@@ -964,9 +1017,15 @@ header {
   padding-inline-start: 0;
 }
 
-.sochil-item {
-  padding-inline: 5px;
+.copy-right-text {margin-block: 0;}
+
+.sochil-item {padding-inline: 5px;}
+
+.footer__cash img {
+  width: 100%;
+  margin: auto;
 }
+
 /*============================ End Footer ==================================*/
 
 /*================== Malite Code ===================*/
@@ -974,6 +1033,8 @@ header {
 a {text-decoration: none;}
 
 ul {list-style: none;}
+
+.fs12 {font-size: 12px;}
 
 .fs15{font-size: 15px;}
 
@@ -987,7 +1048,7 @@ ul {list-style: none;}
 
 .center {text-align: center;}
 
-.padding-item{padding-block-end: 35px;}
+.padding-item {padding-block-end: 35px;}
 
 .capitlize-text { text-transform: capitalize;}
 
@@ -1001,17 +1062,23 @@ ul {list-style: none;}
 
 .primary-color {color: var(--primary-background-text)}
 
-.tomato-background {background: var(--tomato-hover); }
+.tomato-color {color: var(--tomato-color);}
 
-.tomato-color {color: var(--tomato-hover); }
+.hover-tomato-color:hover{color: var(--tomato-hover)}
 
-.hover-background:hover {background: var(--primary-hover);}
+.hover-tamato-background:hover {background: var(--tomato-hover);}
+
+.tomato-background {background: var(--tomato-color);}
 
 .hover-color-primary:hover {color: var(--primary-background-text);}
 
+.hover-background:hover {background: var(--primary-hover);}
+
 .hover-color:hover {color: var(--primary-hover);}
 
-.dark{color: var(--dark-background);}
+.dark {color: var(--dark-background);}
+
+.dark-background-bl {background: var(--dark-hover);}
 
 .dark-background {background: var(--dark-background);}
 
@@ -1019,3 +1086,6 @@ ul {list-style: none;}
 
 .ligh-blue {color: var(--light-blue-header)}
 
+.controle-a:hover,
+.card-btn:hover,
+.camera-card__btn:hover {transition: .5s all;}

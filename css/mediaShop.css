@@ -1,0 +1,187 @@
+@media (max-width: 425px) 
+{
+
+  .proudact-shop__header { /* Proudact */
+    justify-content: center;
+    padding-block-end: 0;
+    border: none;
+  }
+
+  .proudact-shop__cards {
+    flex-direction: column;
+  }
+
+.proudact-shop__card {
+    width: 100%;
+  }
+
+  .lists__item {
+    padding-inline: 15px;
+  }
+
+  .mailte-number {margin-inline-start: 0;} /* Contact us */
+
+  .timming-item {
+    position: relative;
+    right: 45px;
+    width: 230px;
+  }
+
+  .shop-input { 
+      position: relative;
+      right: 110px;
+  }
+
+  .collection-find__item #header-middle__search--search {
+    width: 220px;
+    padding-inline-start: 20px;
+  }
+
+  .collection-find__item .header-middle__search {
+    width: 313px;
+    right: 80px;
+  }
+
+  .footer__copy-right { /* Footer */
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px)
+{
+
+  div.container {max-width: 700px !important;}
+
+  .header-top {display: none;} /* Start Header */
+
+  .header-middle__sochil--round {top: 15px !important;}
+
+  .product-categories { /* Start Proudact Card */
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    left: -350px;
+    top: 0;
+    overflow: auto;
+    z-index: 9999;
+  }
+
+  .collection__colsing #close {
+    text-align: right;
+    padding-inline-end: 70px;
+    padding-block-start: 20px;
+    border-bottom: 1px solid #9999;
+    margin: auto;
+    width: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .closing__icon:before {
+    content: '';
+    width: 16px;
+    height: 2px;
+    background: #999;
+    display: flex;
+    position: absolute;
+    margin-inline-start: 20px;
+  }
+
+  .product-categories__collection {
+    padding-inline-start: 20px;
+  }
+
+  .product-categories__collection-heading {
+    border: navajowhite;
+    padding-block-end: 0;
+    margin-block-end: 10px;
+    font-size: 20px;
+  }
+
+  .list-icon__ching-cards,
+  .header__title {
+    display: none;
+  }
+
+  .proudact-shop__header {
+    justify-content: center;
+  }
+
+  .list-icon__filter {
+    display: flex;
+    padding-inline-start: 15px;
+  }
+
+  .filter__text {padding-inline: 10px;}
+
+  .filter__text,
+  .filter__text,
+  .collection__colsing {display: block;}
+
+  .proudact-shop,
+  .proudact-shop__card {
+    width: 100%;
+  }
+
+  .contact-us__pages{ /* Contact us */
+    padding-block-start: 0;
+  }
+  .space-item-bottom { 
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon-item { 
+    display: block;
+    padding-block-end: 20px;
+  }
+
+  .timming-item {width: 250px;}
+
+  .header-middle__search {right: 50px;}
+
+}
+
+@media (max-width: 1024px)
+{
+  .contact-us__pages {flex-wrap: wrap;} /* Start Contact us  */
+
+  .collection-find {width: 50%;}
+
+  .span-control {
+      width: auto;
+      font-size: 14px;
+      padding-block-end: 0;
+  }
+}
+
+@media (max-width: 1200px)
+{
+  
+
+}
+
+@media (max-width: 1400px) 
+{
+  .header-top__text,
+  .contact .header-middle__search{display: block;} /* Shop Header */
+
+  .header-middle__contact,
+  .ekommart-line {
+    display: none;
+}
+
+.header-middle__sochil--round {top: 65px}
+
+#open-btn{color:#999}
+
+.header-bottom__item--links {color: #FFF;}
+  
+}
+
+@media (max-width: 1440px) {
+  .container {max-width: 1300px;}
+  
+}
