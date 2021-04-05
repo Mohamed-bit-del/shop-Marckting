@@ -1,0 +1,18 @@
+/*-=-=-=-=-=-=-=-=-=-=- Start Main Pages -=-=-=-=-=-=-=-=-=-=-=-*/
+.title-blog__ancor {
+  display: flex;
+  align-items: center;
+}
+
+.title-blog__headding {
+  margin-block: 0;
+}
+
+.ancor__chang {
+  margin-inline: 10px;
+}
+
+.cards__link-blog {
+  text-decoration: underline;
+}
+/*-=-=-=-=-=-=-=-=-=-=- End Main Pages -=-=-=-=-=-=-=-=-=-=-=-=-*/

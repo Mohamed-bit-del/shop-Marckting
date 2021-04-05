@@ -1,0 +1,133 @@
+body {
+  background: var(--light-sliver-body);
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- Start Main About =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+/* Start Main Story Page */
+.story {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title__headding {
+  margin-block-start: 0;
+}
+
+.story__logo {
+  width: 45%;
+}
+
+.about-logo {
+  width: 100%;
+}
+
+.story__title {
+  width: 45%;
+  line-height: 25px;
+}
+
+.title__anthor {
+  position: relative;
+  bottom: 100px;
+  left: 110px;
+  width: 80%;
+  line-height: 35px;
+}
+
+
+.anthor__work {
+  display: block;
+  font-size: 11px;
+}
+/* End Main Story Page */
+
+/* Start Main Technical support */
+.technical-support__free-delivrey {
+  padding-inline: 20px;
+  padding-block: 30px;
+  flex-direction: column;
+  line-height: 35px;
+  align-items: end;
+}
+
+.technical-support__free-delivrey:nth-child(2) {
+  margin-inline: 25px;
+}
+
+.text-two {
+  width: 90%;
+}
+/* End Main Technical support */
+
+/* Start Main Our Team */
+.team {
+  padding-block: 75px;
+}
+
+.team__headding {
+  padding-block-end: 30px;
+}
+
+.our-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.card__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title__name {
+  margin-block-end: 0;
+}
+
+.title__hedding {
+  margin-block: 15px;
+}
+
+
+.title__socile {
+  display: flex;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+
+.socile__item {
+  margin-inline: 10px;
+  border: 1px solid #888;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.socile__item:hover {
+  border-color: var(--tomato-hover);
+}
+
+.title__text {
+  text-align: center;
+  width: 320px;
+  line-height: 25px;
+}
+/* End Main Our Team */
+
+/* Start Main Group Brands */
+.brand {
+  margin-block: 2px;
+  padding-block: 50px;
+
+}
+/* End Main Group Brands */
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- End Main About =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/

@@ -1,0 +1,50 @@
+
+
+@media (max-width: 425px) {}
+
+@media (max-width: 768px) { 
+
+  .story {flex-direction: column;} /* Story Page */
+
+  .story__logo {
+    width: 100%;
+  }
+
+  .story__title {
+    width: 100%;
+    margin-block: 50px;
+  }
+
+  .title__headding {
+    text-align: center;
+  }
+
+  .title__anthor {
+    width: auto;
+    position: inherit;
+  }
+
+  .section-support__headding {text-align: center;} /* Technical support */
+
+  .technical-support__free-delivrey:nth-child(2) {
+    margin-inline: 0;
+    margin-block: 20px;
+  }
+
+  .our-team {flex-direction: column;} /* Our Team */
+
+  .team__card {
+    width: 100%;
+    margin-block: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* .story__logo {width: auto;} */
+
+  .title__text {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1440px) {}
