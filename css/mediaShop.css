@@ -1,3 +1,9 @@
+@media (max-width: 320px) {
+  .collection-find__item .header-middle__search {
+    right: 85px !important
+  }
+}
+
 @media (max-width: 425px) 
 {
 
@@ -23,7 +29,7 @@
 
   .timming-item {
     position: relative;
-    right: 45px;
+    right: 5px;
     width: 230px;
   }
 
@@ -39,7 +45,7 @@
 
   .collection-find__item .header-middle__search {
     width: 313px;
-    right: 80px;
+    right: 65px;
   }
 
   .footer__copy-right { /* Footer */

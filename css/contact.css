@@ -1,0 +1,77 @@
+body {
+  background: var(--light-and-some-text);
+}
+
+/*-=-=-=-=-=-=-=-=-=-=- Start Main contact Page -=-=-=-=-=-=-=-=-=-=-=-*/
+.contact-page { /* Map */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 34px;
+}
+
+.contact-title__headding {width: 50%;}
+.contact-title__text {letter-spacing: 1.5px;}
+
+.list__contact-text {padding-inline-start: 20px;}
+
+.contact-form { /* Form */
+  display: flex;
+  border: 1px solid #CCCC;
+  margin-block: 50px;
+  padding: 50px;
+}
+
+.form {
+  width: 75%;
+}
+
+.informaction {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.informaction__text {
+  letter-spacing: 2px;
+}
+
+.informaction__inbut {
+  padding: 20px;
+  margin-block-end: 20px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #CCCC;
+}
+
+.informaction__btn {
+  width: 20%;
+  padding-block: 15px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.contact-cards { /* Card */
+  width: 25%;
+  line-height: 0;
+}
+
+.contact-cards__card {
+  display: flex;
+  align-items: center;
+}
+
+.contact-cards__card:nth-child(2) {
+  margin-block: 30px;
+}
+
+.contact-card__title {
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  padding-inline-start: 30px;
+}
+
+/*-=-=-=-=-=-=-=-=-=-=- End Main contact Page -=-=-=-=-=-=-=-=-=-=-=-*/

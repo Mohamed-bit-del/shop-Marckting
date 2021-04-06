@@ -1,6 +1,18 @@
+@media (max-width: 320px) {
+  html div.container.anther {max-width: 300px !important;
+    width: 280px !important;
+  } 
+}
+
+@media (max-width: 400px) {
+  html div.container.anther {max-width: 300px !important;
+    width: 330px;
+  } 
+}
+
 @media (max-width: 425px) 
 {
-  html div.container.anther {max-width: 250px !important;} 
+  html div.container.anther {max-width: 370px !important;} 
 
   .fs25{font-size: 20px;}
 
@@ -343,9 +355,11 @@
   .brang__logo.light-background {padding-inline: 8px;}
 
   .electronic__mobiles-headding,
-  .electronic__mobiles-list {
+  .electronic__mobiles-list
+  {
       padding-inline-start: 20px;
   }
+
 
   div.group-image__title {width: 75%;} /* Groube image */
 

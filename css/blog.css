@@ -1,4 +1,23 @@
 /*-=-=-=-=-=-=-=-=-=-=- Start Main Pages -=-=-=-=-=-=-=-=-=-=-=-*/
+.product-blog {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-block-start: 30px;
+}
+
+.blog__componand {
+  width: 75%;
+}
+
+.componand__cards {
+  margin-block-end: 50px;
+}
+
+.cards__image-blog img {
+  width: 100%;
+}
+
 .title-blog__ancor {
   display: flex;
   align-items: center;
@@ -14,5 +33,52 @@
 
 .cards__link-blog {
   text-decoration: underline;
+}
+
+.electronic__mobiles { /* product ul */
+  width: 25%;
+}
+
+.list-item {
+  border-bottom: 1px solid #DDDD;
+  height: 100px;
+}
+
+.item-title__text { 
+  width: auto;
+}
+
+.item-title {
+  height: 100%;
+}
+
+.blog-folder {
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  border-top: 1px solid #DDDD;
+  padding-block: 30px;
+  /* margin-inline-start: 20px; */
+}
+
+.folder-text {
+  margin-inline-start: 10px;
+}
+
+.blog-tags {
+  height: 50px;
+  border-top: 1px solid #DDD;
+  padding-block-start: 30px;
+  /* margin-inline-start: 20px; */
+}
+
+.tags-btn {
+  padding-block: 13px;
+  padding-inline: 8px;
+  transition: 1s all;
+}
+
+.tags-btn:hover {
+  color: #FFF;
 }
 /*-=-=-=-=-=-=-=-=-=-=- End Main Pages -=-=-=-=-=-=-=-=-=-=-=-=-*/

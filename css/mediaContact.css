@@ -1,0 +1,81 @@
+@media (max-width: 320px) {
+  div.contact-map .mapouter {
+    width: 280px !important;
+    }
+  
+  div.contact-map .gmap_canvas {
+    width: 280px !important;
+    margin: auto;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .list__contact-text {
+    font-size: 13px;
+  }
+
+  .contact-map .mapouter {
+    width: 330px !important;
+    }
+  
+    .contact-map .gmap_canvas {
+      width: 330px !important;
+      margin: auto;
+    }
+
+    .contact-cards__card {
+      flex-direction: column;
+    }
+
+    .contact-card__title {
+      align-items: center;
+      padding-inline-start: 0;
+    }
+}
+
+@media (max-width: 425px) {
+.mapouter {
+  width: 380px !important;
+  }
+
+  .gmap_canvas {
+    width: 370px !important;
+    margin: auto;
+  }
+
+  .informaction__btn {
+    width: auto;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact-title__headding { /* Map */
+    width: 90%;
+  }
+  .contact-form { /* Form */
+    flex-direction: column;
+    padding-inline: 25px;
+ }
+
+.form {
+    width: 100%;
+  }
+
+.informaction {
+    width: 100%;
+  }
+
+  .contact-cards { /* Card */
+    padding-block-start: 30px;
+    width: 100%;
+  }
+
+}

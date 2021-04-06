@@ -11,6 +11,7 @@
   --primary-hover: #E5A500;
   --dark-hover: #000;
   --dark-background: #252525;
+  --gray-color: #DDDD;
 }
 
 body {
@@ -836,7 +837,7 @@ header {
   content: '';
   width: 82%;
   height: .1px;
-  background: #9999;
+  background: #DDDD;
   position: absolute;
   top: 52px;
 }
@@ -1032,7 +1033,7 @@ header {
 
 a {text-decoration: none;}
 
-ul {list-style: none;}
+ul {list-style: none; padding: 0;}
 
 .fs12 {font-size: 12px;}
 
@@ -1080,6 +1081,8 @@ ul {list-style: none;}
 
 .dark-text { color: var(--dark-some-text);}
 
+.black-color {color: var(--dark-hover);}
+
 .dark-background-bl {background: var(--dark-hover);}
 
 .dark-background {background: var(--dark-background);}
@@ -1087,6 +1090,10 @@ ul {list-style: none;}
 .ligh-dark-color{ color: var(--light-dark-text)}
 
 .ligh-blue {color: var(--light-blue-header)}
+
+.gray {color: var(--gray-color);}
+
+.gray-background {background: var(--gray-color);}
 
 .controle-a:hover,
 .card-btn:hover,

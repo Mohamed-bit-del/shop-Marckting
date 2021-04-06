@@ -1,0 +1,35 @@
+@media (max-width: 320px){
+  .ancor__chang {
+  margin-inline: 0;
+  }
+}
+
+@media (max-width: 425px){
+
+  /* html div.container.anther {
+    max-width: 300px !important;
+  } */
+
+  
+}
+@media (max-width: 768px) {
+
+  div.container.anther {
+    max-width: 700px !important;
+  }
+
+  .blog__componand {
+    width: 100%;
+  }
+
+  .electronic__mobiles {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px){
+  .blog-folder,
+  .blog-tags {
+      margin-inline-start: 20px;
+  }
+}
