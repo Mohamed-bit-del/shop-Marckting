@@ -4,337 +4,368 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <title>Home 18 - Ekmmart</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- start Header -->
   <header>
-    <!-- <div class="continer"> -->
       <div class="header">
-        
+        <a href="#" id="open-btn"><i class="fas fa-outdent fa-2x"></i></a>
+      
         <section class="header-top">
-          <div class="container anther">
-            <h4 class="header-top__text light">Welcome to our online store!</h4>
+          <div class="container">
+            <div class="header-top__headding">
+              <h4 class="headding__text">Welcome to our online store!</h4>
+            </div> <!-- ./header-top__headding -->
+          </div> <!-- ./container -->
+        </section> <!-- ./header-top -->
+      
+        <section class="header-middle">
+          <div class="container">
+            <div class="header-middle__perant">
+              <div class="logo">
+                <a href="#"><img src="image/logo.svg" alt="logo"></a>
+              </div> <!-- ./logo -->
+            
+              <form>
+                <div class="header-middle__search">
+                  <i class="icon fas fa-search"></i>
+                  <input type="search" class="search" placeholder="serch products..." >
+                  <button class="btn btn-search">search</button>
+                </div> <!-- ./header-middle__search -->
+              </form>
+            
+              <div class="header-middle__sochil">
+                <div class="sign-in">
+                  <a href="#" class="light">
+                    <i class="far fa-user light"></i>
+                  </a>
+                  <div class="login">
+                    <form>
+                      <div class="create-acount">
+                        <h5>sign in</h5>
+                        <a href="#">create an account</a>
+                      </div> <!-- ./create-acount -->
+                      <div class="form-groub">
+                        <label for="">user name</label>
+                        <input type="email" placeholder="username">
+                      </div> <!-- ./form-groub -->
+                    
+                      <div class="form-groub">
+                        <label for="">password</label>
+                        <input type="password" placeholder="password">
+                      </div> <!-- ./form-groub -->
+                    
+                      <div class="form-groub">
+                        <label for=""></label>
+                        <input type="submit" class="btn" value="login">
+                      </div> <!-- ./form-groub -->
+                      <a href="#">last your password?</a>
+                    </form>
+                  </div>
+                </div> <!-- ./sign-in -->
+              
+                <div class="heart-icon">
+                  <a href="#" class="light">
+                    <i class="far fa-heart"></i>
+                    <span class="header-middle__sochil--round">0</span>
+                  </a>
+                </div> <!-- ./heart-icon -->
+              
+                <div class="basket-icon">
+                  <a href="#" class="light">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span class="header-middle__sochil--round">0</span>
+                    <span class="header-middle__sochil--doler">$109.93</span>
+                  </a>
+                </div> <!-- ./basket-icon -->
+              </div> <!-- ./header-middle__sochil -->
+            </div> <!-- ./header-middle__perant -->
+          </div> <!-- ./container -->
+        </section> <!-- ./header-middle -->
+        
+        <section class="header-bottom">
+          <div class="container">
+            <section class="">
+              <div class="header-bottom__responsive">
+                <div class="header-bottom__collection">
+                  <ul class="header-bottom__collection-list capitlize-text" id="open-nav">
+                      <a href="javascript:void(0);" id="close-btn" onclick="closeBtn()"> X </a>
+                      <li class="header-bottom__item visbile-list-home">
+                        <a href="index.html" class="header-bottom__item--links hover-color primary-color padding-item">
+                          <span class="item-header">home</span>
+                          <i class="fas fa-angle-down"></i>
+                        </a>
+                          <ul class="collection__list-anther-hover-list light-background"> <!-- Start Hover Home -->
+                            <li class="anther-hover-list__item">
+                              <a href="#" class="dark">
+                                <img src="image/hover image/1.jpg" alt="" class="hover-listes">
+                                <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">01</span></p>
+                              </a>
+                            </li>
+                            <li class="anther-hover-list__item">
+                              <a href="#" class="dark">
+                                <img src="image/hover image/2.jpg" alt="" class="hover-listes">
+                                <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">02</span></p>
+                              </a>
+                            </li>
+                            <li class="anther-hover-list__item">
+                              <a href="#" class="dark">
+                                <img src="image/hover image/3.jpg" alt="" class="hover-listes">
+                                <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">03</span></p>
+                              </a>
+                            </li>
+                            <li class="anther-hover-list__item">
+                              <a href="#" class="dark">
+                                <img src="image/hover image/4.jpg" alt="" class="hover-listes">
+                                <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">04</span></p>
+                              </a>
+                            </li>
+                            <li class="anther-hover-list__item">
+                              <a href="#" class="dark">
+                                <img src="image/hover image/5.jpg" alt="" class="hover-listes">
+                                <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">05</span></p>
+                              </a>
+                            </li>
+                            <li class="anther-hover-list__item">
+                              <a href="#" class="dark">
+                                <img src="image/hover image/6.jpg" alt="" class="hover-listes">
+                                <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">06</span></p>
+                              </a>
+                            </li>
+                            <li class="anther-hover-list__item">
+                              <a href="#" class="dark">
+                                <img src="image/hover image/7.jpg" alt="" class="hover-listes">
+                                <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">07</span></p>
+                              </a>
+                            </li>
+                            <li class="anther-hover-list__item">
+                              <a href="#" class="dark">
+                                <img src="image/hover image/8.jpg" alt="" class="hover-listes">
+                                <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">08</span></p>
+                              </a>
+                            </li>
+                            <li class="anther-hover-list__item">
+                              <a href="#" class="dark">
+                                <img src="image/hover image/9.jpg" alt="" class="hover-listes">
+                                <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">09</span></p>
+                              </a>
+                            </li>
+                            <li class="anther-hover-list__item">
+                              <a href="#" class="dark">
+                                <img src="image/hover image/10.jpg" alt="" class="hover-listes">
+                                <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">10</span></p>
+                              </a>
+                            </li>
+                            <div class="header-bottom__collection-btn">
+                              <a href="#">
+                              <button class="btn-listes light primary-background hover-background">view all demos (30)</button>
+                              </a>
+                            </div>
+                          </ul> <!-- End Hover Home -->
+                      </li>
+                      <li class="header-bottom__item">
+                        <a href="about.html" class="light hover-color header-bottom__item--links">
+                          <span class="item-header">about</span>
+                        </a>
+                      </li>
+                      <li class="header-bottom__item visbile-list-shop">
+                        <a href="shop.html" class="light hover-color header-bottom__item--links padding-item">
+                          <span class="item-header">shop</span>
+                          <i class="fas fa-angle-down"></i>
+                        </a>
+                          <div class="collection__list-shop-items light-background capitlize-text"> <!-- Start Hover Shop -->
+                            <ul class="shop-items__layout">
+                              <h4 class="heading-item fs20">shop layout</h4>
+                              <li class="items__layout-one">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>shop full width</span>
+                                </a>
+                              </li>
+                              <li class="items__layout-one">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>shop left sidbar</span>
+                                </a>
+                              </li>
+                              <li class="items__layout-one">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>shop right sidbar</span>
+                                </a>
+                              </li>
+                              <li class="items__layout-one">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>dokan store list</span>
+                                </a>
+                              </li>
+                              <li class="items__layout-one">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>dokan vonder store</span>
+                                </a>
+                              </li>
+                            </ul>
+                            <ul class="shop-items__proudect-style">
+                              <h4 class="heading-item fs20">proudect style</h4>
+                              <li class="items__proudect">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>proudact style 1</span>
+                                </a>
+                              </li>
+                              <li class="items__proudect">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>proudact style 2</span>
+                                </a>
+                              </li>
+                              <li class="items__proudect">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>proudact style 3</span>
+                                </a>
+                              </li>
+                              <li class="items__proudect">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>proudact style 4</span>
+                                </a>
+                              </li>
+                              <li class="items__proudect">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>proudact style 5</span>
+                                </a>
+                              </li>
+                            </ul>
+                            <ul class="shop-items__proudect-page">
+                              <h4 class="heading-item fs20">proudect pages</h4>
+                              <li class="items__proudect-two">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>simple product</span>
+                                </a>
+                              </li>
+                              <li class="items__proudect-two">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>variable product</span>
+                                </a>
+                              </li>
+                              <li class="items__proudect-two">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>group product</span>
+                                </a>
+                              </li>
+                              <li class="items__proudect-two">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>affiliate product</span>
+                                </a>
+                              </li>
+                              <li class="items__proudect-two">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>single product style</span>
+                                </a>
+                              </li>
+                            </ul>
+                            <ul class="shop-items__shop-pages">
+                              <h4 class="heading-item fs20">shop pages</h4>
+                              <li class="items__proudect-two">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>cart</span>
+                                </a>
+                              </li>
+                              <li class="items__proudect-two">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>checkout </span>
+                                </a>
+                              </li>
+                              <li class="items__proudect-two">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>my account</span>
+                                </a>
+                              </li>
+                              <li class="items__proudect-two">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>order tracking</span>
+                                </a>
+                              </li>
+                              <li class="items__proudect-two">
+                                <a href="#" class="ligh-dark-color hover-color-primary">
+                                  <span>wishlist</span>
+                                </a>
+                              </li>
+                            </ul>
+                            <div class="shop__items__image-hover-shop">
+                              <div class="text-shop-item">
+                                <p class="text-shop-item__prumium uppercase-text">premium suppelements</p>
+                                <h2 class="text-shop-item__hedding tomato-color">with a focus on purity & quality</h2>
+                                <a href="#" class="text-shop-item__link dark">shop now</a>
+                              </div>
+                              <div class="logo-shop">
+                                <img src="image/Groub-1/groub-1-image(2).jpg" alt="shoes">
+                              </div>
+                            </div>
+                          </div> <!-- End Hover Shop -->
+                      </li>
+                      <li class="header-bottom__item visbile-list-blog">
+                        <a href="blog.html" class="light hover-color header-bottom__item--links padding-item">
+                          <span class="item-header">blog</span>
+                          <i class="fas fa-angle-down"></i>
+                        </a>
+                          <ul class="collection__list-blog-items light-background capitlize-text"> <!-- Start hover blog -->
+                            <li class="blog-items__hover-list">
+                              <a href="#" class="ligh-dark-color hover-color-primary">
+                                blog-gallery view
+                              </a>
+                            </li>
+                            <li class="blog-items__hover-list">
+                              <a href="#" class="ligh-dark-color hover-color-primary">
+                                blog-gallery view
+                              </a>
+                            </li>
+                            <li class="blog-items__hover-list">
+                              <a href="#" class="ligh-dark-color hover-color-primary">
+                                blog-gallery view
+                              </a>
+                            </li>
+                            <li class="blog-items__hover-list">
+                              <a href="#" class="ligh-dark-color hover-color-primary">
+                                blog-gallery view
+                              </a>
+                            </li>
+                            <li class="blog-items__hover-list">
+                              <a href="#" class="ligh-dark-color hover-color-primary">
+                                blog-gallery view
+                              </a>
+                            </li>
+                            <li class="blog-items__hover-list">
+                              <a href="#" class="ligh-dark-color hover-color-primary">
+                                single post
+                              </a>
+                            </li>
+                          </ul> <!-- End hover blog -->
+                      </li>
+                      <li class="header-bottom__item visbile-list-pages">
+                        <a href="#" class="light hover-color header-bottom__item--links padding-item">
+                          <span class="item-header">pages</span>
+                          <i class="fas fa-angle-down"></i>
+                        </a>
+                      </li>
+                      <li class="header-bottom__item">
+                        <a href="contact.html" class="light hover-color header-bottom__item--links">
+                          <span class="item-header">contact</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header-bottom__contacet-us">
+                    <i class="fas fa-headphones-alt primary-color"></i>
+                    <h3 class="header-bottom__call">
+                      <a href="#" class="light header-bottom__call--heading ">
+                        call us: +258-6957 336524
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+            </section>
           </div>
         </section>
-        
-        <div class="container anther">
-          <section class="header-middle">
-            <a href="javascript:void(0);" id="open-btn" onclick="openBtn()"><i class="fas fa-outdent fa-2x"></i></a>
-            <h1 class="header-middel__logo light fs40">ekommart</h1>
-            <div class="header-middle__search">
-              <i class="fas fa-search header-middle__search--icon primary-color"></i>
-              <input type="search" name="" id="header-middle__search--search" placeholder="serch products..." >
-              <button class="header-middle__search--btn hover-background primary-background capitlize-text">
-                <a href="#" class="light fs15">search</a>
-              </button>
-            </div>
-            
-            <div class="header-middle__sochil">
-              <div class="sign-in">
-                <a href="#" class="light">
-                  <i class="far fa-user light"></i>
-                </a>
-                <div class="sign-in__inter">
-
-                </div>
-              </div>
-              <div class="heart-icon">
-                <a href="#" class="light">
-                  <i class="far fa-heart"></i>
-                  <span class="header-middle__sochil--round tomato-background">61</span>
-                </a>
-              </div>
-              <div class="basket-icon">
-                <a href="#" class="light">
-                  <i class="fas fa-shopping-basket"></i>
-                  <span class="header-middle__sochil--round tomato-background">1</span>
-                  <span class="header-middle__sochil--doler">$109.93</span>
-                </a>
-              </div>
-            </div>
-          </section>
-          <span class="inder-line"></span>
-          <section class="header-bottom">
-            <div class="header-bottom__responsive">
-              <div class="header-bottom__collection">
-                <ul class="header-bottom__collection-list capitlize-text" id="open-nav">
-                    <a href="javascript:void(0);" id="close-btn" onclick="closeBtn()"> X </a>
-                    <li class="header-bottom__item visbile-list-home">
-                      <a href="index.html" class="header-bottom__item--links hover-color primary-color padding-item">
-                        <span class="item-header">home</span>
-                        <i class="fas fa-angle-down"></i>
-                      </a>
-                        <ul class="collection__list-anther-hover-list light-background"> <!-- Start Hover Home -->
-                          <li class="anther-hover-list__item">
-                            <a href="#" class="dark">
-                              <img src="image/hover image/1.jpg" alt="" class="hover-listes">
-                              <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">01</span></p>
-                            </a>
-                          </li>
-                          <li class="anther-hover-list__item">
-                            <a href="#" class="dark">
-                              <img src="image/hover image/2.jpg" alt="" class="hover-listes">
-                              <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">02</span></p>
-                            </a>
-                          </li>
-                          <li class="anther-hover-list__item">
-                            <a href="#" class="dark">
-                              <img src="image/hover image/3.jpg" alt="" class="hover-listes">
-                              <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">03</span></p>
-                            </a>
-                          </li>
-                          <li class="anther-hover-list__item">
-                            <a href="#" class="dark">
-                              <img src="image/hover image/4.jpg" alt="" class="hover-listes">
-                              <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">04</span></p>
-                            </a>
-                          </li>
-                          <li class="anther-hover-list__item">
-                            <a href="#" class="dark">
-                              <img src="image/hover image/5.jpg" alt="" class="hover-listes">
-                              <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">05</span></p>
-                            </a>
-                          </li>
-                          <li class="anther-hover-list__item">
-                            <a href="#" class="dark">
-                              <img src="image/hover image/6.jpg" alt="" class="hover-listes">
-                              <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">06</span></p>
-                            </a>
-                          </li>
-                          <li class="anther-hover-list__item">
-                            <a href="#" class="dark">
-                              <img src="image/hover image/7.jpg" alt="" class="hover-listes">
-                              <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">07</span></p>
-                            </a>
-                          </li>
-                          <li class="anther-hover-list__item">
-                            <a href="#" class="dark">
-                              <img src="image/hover image/8.jpg" alt="" class="hover-listes">
-                              <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">08</span></p>
-                            </a>
-                          </li>
-                          <li class="anther-hover-list__item">
-                            <a href="#" class="dark">
-                              <img src="image/hover image/9.jpg" alt="" class="hover-listes">
-                              <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">09</span></p>
-                            </a>
-                          </li>
-                          <li class="anther-hover-list__item">
-                            <a href="#" class="dark">
-                              <img src="image/hover image/10.jpg" alt="" class="hover-listes">
-                              <p class="anther-hover-list__item--text center"> sports & outdoors <span class="tomato-color">10</span></p>
-                            </a>
-                          </li>
-                          <div class="header-bottom__collection-btn">
-                            <a href="#">
-                            <button class="btn-listes light primary-background hover-background">view all demos (30)</button>
-                            </a>
-                          </div>
-                        </ul> <!-- End Hover Home -->
-                    </li>
-                    <li class="header-bottom__item">
-                      <a href="about.html" class="light hover-color header-bottom__item--links">
-                        <span class="item-header">about</span>
-                      </a>
-                    </li>
-                    <li class="header-bottom__item visbile-list-shop">
-                      <a href="shop.html" class="light hover-color header-bottom__item--links padding-item">
-                        <span class="item-header">shop</span>
-                        <i class="fas fa-angle-down"></i>
-                      </a>
-                        <div class="collection__list-shop-items light-background capitlize-text"> <!-- Start Hover Shop -->
-                          <ul class="shop-items__layout">
-                            <h4 class="heading-item fs20">shop layout</h4>
-                            <li class="items__layout-one">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>shop full width</span>
-                              </a>
-                            </li>
-                            <li class="items__layout-one">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>shop left sidbar</span>
-                              </a>
-                            </li>
-                            <li class="items__layout-one">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>shop right sidbar</span>
-                              </a>
-                            </li>
-                            <li class="items__layout-one">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>dokan store list</span>
-                              </a>
-                            </li>
-                            <li class="items__layout-one">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>dokan vonder store</span>
-                              </a>
-                            </li>
-                          </ul>
-                          <ul class="shop-items__proudect-style">
-                            <h4 class="heading-item fs20">proudect style</h4>
-                            <li class="items__proudect">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>proudact style 1</span>
-                              </a>
-                            </li>
-                            <li class="items__proudect">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>proudact style 2</span>
-                              </a>
-                            </li>
-                            <li class="items__proudect">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>proudact style 3</span>
-                              </a>
-                            </li>
-                            <li class="items__proudect">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>proudact style 4</span>
-                              </a>
-                            </li>
-                            <li class="items__proudect">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>proudact style 5</span>
-                              </a>
-                            </li>
-                          </ul>
-                          <ul class="shop-items__proudect-page">
-                            <h4 class="heading-item fs20">proudect pages</h4>
-                            <li class="items__proudect-two">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>simple product</span>
-                              </a>
-                            </li>
-                            <li class="items__proudect-two">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>variable product</span>
-                              </a>
-                            </li>
-                            <li class="items__proudect-two">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>group product</span>
-                              </a>
-                            </li>
-                            <li class="items__proudect-two">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>affiliate product</span>
-                              </a>
-                            </li>
-                            <li class="items__proudect-two">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>single product style</span>
-                              </a>
-                            </li>
-                          </ul>
-                          <ul class="shop-items__shop-pages">
-                            <h4 class="heading-item fs20">shop pages</h4>
-                            <li class="items__proudect-two">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>cart</span>
-                              </a>
-                            </li>
-                            <li class="items__proudect-two">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>checkout </span>
-                              </a>
-                            </li>
-                            <li class="items__proudect-two">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>my account</span>
-                              </a>
-                            </li>
-                            <li class="items__proudect-two">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>order tracking</span>
-                              </a>
-                            </li>
-                            <li class="items__proudect-two">
-                              <a href="#" class="ligh-dark-color hover-color-primary">
-                                <span>wishlist</span>
-                              </a>
-                            </li>
-                          </ul>
-                          <div class="shop__items__image-hover-shop">
-                            <div class="text-shop-item">
-                              <p class="text-shop-item__prumium uppercase-text">premium suppelements</p>
-                              <h2 class="text-shop-item__hedding tomato-color">with a focus on purity & quality</h2>
-                              <a href="#" class="text-shop-item__link dark">shop now</a>
-                            </div>
-                            <div class="logo-shop">
-                              <img src="image/Groub-1/groub-1-image(2).jpg" alt="shoes">
-                            </div>
-                          </div>
-                        </div> <!-- End Hover Shop -->
-                    </li>
-                    <li class="header-bottom__item visbile-list-blog">
-                      <a href="blog.html" class="light hover-color header-bottom__item--links padding-item">
-                        <span class="item-header">blog</span>
-                        <i class="fas fa-angle-down"></i>
-                      </a>
-                        <ul class="collection__list-blog-items light-background capitlize-text"> <!-- Start hover blog -->
-                          <li class="blog-items__hover-list">
-                            <a href="#" class="ligh-dark-color hover-color-primary">
-                              blog-gallery view
-                            </a>
-                          </li>
-                          <li class="blog-items__hover-list">
-                            <a href="#" class="ligh-dark-color hover-color-primary">
-                              blog-gallery view
-                            </a>
-                          </li>
-                          <li class="blog-items__hover-list">
-                            <a href="#" class="ligh-dark-color hover-color-primary">
-                              blog-gallery view
-                            </a>
-                          </li>
-                          <li class="blog-items__hover-list">
-                            <a href="#" class="ligh-dark-color hover-color-primary">
-                              blog-gallery view
-                            </a>
-                          </li>
-                          <li class="blog-items__hover-list">
-                            <a href="#" class="ligh-dark-color hover-color-primary">
-                              blog-gallery view
-                            </a>
-                          </li>
-                          <li class="blog-items__hover-list">
-                            <a href="#" class="ligh-dark-color hover-color-primary">
-                              single post
-                            </a>
-                          </li>
-                        </ul> <!-- End hover blog -->
-                    </li>
-                    <li class="header-bottom__item visbile-list-pages">
-                      <a href="#" class="light hover-color header-bottom__item--links padding-item">
-                        <span class="item-header">pages</span>
-                        <i class="fas fa-angle-down"></i>
-                      </a>
-                    </li>
-                    <li class="header-bottom__item">
-                      <a href="contact.html" class="light hover-color header-bottom__item--links">
-                        <span class="item-header">contact</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="header-bottom__contacet-us">
-                  <i class="fas fa-headphones-alt primary-color"></i>
-                  <h3 class="header-bottom__call">
-                    <a href="#" class="light header-bottom__call--heading ">
-                      call us: +258-6957 336524
-                    </a>
-                  </h3>
-                </div>
-              </div>
-          </section>
-        </div>
         <div class="header__ul light-background">
           <ul class="ul__collection-fixed">
             <li class="collection-fixed__item">
@@ -363,13 +394,13 @@
             </li>
           </ul>
         </div>
-      </div>
-    </div>
+      </div>  <!-- ./header -->
   </header>
+  <!-- End Of Header -->
 
   <!-- Start main section -->
   <div class="section-main">
-    <div class="container anther">
+    <div class="container">
       <section class="main">
         <div class="main__navegation light-background capitlize-text">
           <div class="navegation__heading primary-background">
@@ -491,7 +522,7 @@
 
   <!-- Start Technical support -->
   <div class="section-support">
-    <div class="container anther">
+    <div class="container">
         <section class="technical-support light-background">
           <div class="technical-support__free-delivrey">
             <span class="free-delivrey__icon primary-color"><i class="fas fa-rocket fa-2x"></i></span>
@@ -565,7 +596,7 @@
 
   <!-- Start card product -->
   <div class="card-prouduct">
-    <div class="container anther">
+    <div class="container">
       <section class="group-products">
         <div class="group-products__card">
           <div class="group-products__card-image">
@@ -793,7 +824,7 @@
  
   <!-- Start Collection images -->
   <div class="collection-image">
-    <div class="container anther">
+    <div class="container">
       <section class="grouping-images">
         <div class="grouping-images__group-image">
           <div class="group-image__logo-one"></div>
@@ -831,7 +862,7 @@
 
   <!-- Start Section Computer Electronics -->
   <div class="computer-electronics">
-    <div class="container anther"> 
+    <div class="container"> 
       <div class="electronic__headding">
         <h2 class="electronic__headding-text capitlize-text fs40">computer & electronics</h2>
       </div>
@@ -1126,7 +1157,7 @@
 
    <!-- Start Section Clothing  Apparel -->
    <div class="computer-electronics">
-    <div class="container anther"> 
+    <div class="container"> 
       <div class="electronic__headding">
         <h2 class="electronic__headding-text capitlize-text fs40">clothing & apparel</h2>
       </div>
@@ -1404,7 +1435,7 @@
 
    <!-- Start Section Home Garden Kitchen -->
    <div class="computer-electronics">
-    <div class="container anther"> <div class="electronic__headding">
+    <div class="container"> <div class="electronic__headding">
           <h2 class="electronic__headding-text capitlize-text fs40">home, garden & kitchen</h2>
         </div>
       <section class="electronic">
@@ -1770,7 +1801,7 @@
 
   <!-- Start Section Contact -->
   <div class="contact">
-    <div class="container anther">
+    <div class="container">
       <section class="contact-us">
         <div class="contact-us__pages capitlize-text">
           <ul class="collection-find">

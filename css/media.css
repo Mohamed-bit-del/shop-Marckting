@@ -1,18 +1,7 @@
-@media (max-width: 320px) {
-  html div.container.anther {max-width: 300px !important;
-    width: 280px !important;
-  } 
-}
 
-@media (max-width: 400px) {
-  html div.container.anther {max-width: 300px !important;
-    width: 330px;
-  } 
-}
 
 @media (max-width: 425px) 
 {
-  html div.container.anther {max-width: 370px !important;} 
 
   .fs25{font-size: 20px;}
 
@@ -105,8 +94,6 @@
 
 @media (max-width: 768px)
 {
-  div.container.anther {max-width: 500px !important;}
-
   section.main {flex-direction: column;}
 
   div.main__navegation {
@@ -216,7 +203,6 @@
 
 @media (max-width: 1024px)
 {
-  div.container {max-width: 950px !important;}
 
   .header-middle__sochil--round {
     top: 10px;
@@ -373,7 +359,6 @@
 
 @media (max-width: 1200px)
 {
-  .container {max-width: 1100px !important;}
 
   .group-image__title {width: 40%;} /* Groub image */
 
@@ -400,7 +385,6 @@
 
 @media (max-width: 1440px) 
 {
-  .container {max-width: 1300px;}
 
   .brang__logo{width: 18%;}
 

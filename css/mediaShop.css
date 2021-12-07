@@ -4,8 +4,7 @@
   }
 }
 
-@media (max-width: 425px) 
-{
+@media (max-width: 425px) {
 
   .proudact-shop__header { /* Proudact */
     justify-content: center;
